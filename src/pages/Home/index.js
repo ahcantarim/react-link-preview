@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import cheerio from 'cheerio';
 
-import { Input, Card, Space } from 'antd';
+import { Input, Card, Space, Divider } from 'antd';
 import { LinkOutlined } from '@ant-design/icons';
 
 import { Body } from './styles';
@@ -108,6 +108,7 @@ export default function Home() {
                 direction="vertical"
                 style={{ width: "100%" }}
             >
+                <Divider orientation="left">First, paste an valid URL then unfocus the input field</Divider>
                 <Input
                     size="large"
                     onBlur={onBlur}
@@ -116,22 +117,25 @@ export default function Home() {
                 />
 
                 {previewData && (
-                    <Card
-                        title={previewData.site || previewData.title}
-                        extra={<a href={previewData.link} target="_blank" rel="noopener noreferrer">Leia mais...</a>}
-                        style={{ width: "100%" }}
-                        cover={
-                            <img
-                                alt={previewData.title}
-                                src={previewData.image}
+                    <>
+                        <Divider orientation="left">Enjoy the result</Divider>
+                        <Card
+                            title={previewData.site || previewData.title}
+                            extra={<a href={previewData.link} target="_blank" rel="noopener noreferrer">Leia mais...</a>}
+                            style={{ width: 400 }}
+                            cover={
+                                <img
+                                    alt={previewData.title}
+                                    src={previewData.image}
+                                />
+                            }
+                        >
+                            <Meta
+                                title={previewData.title}
+                                description={previewData.description}
                             />
-                        }
-                    >
-                        <Meta
-                            title={previewData.title}
-                            description={previewData.description}
-                        />
-                    </Card>
+                        </Card>
+                    </>
                 )}
             </Space>
         </Body>
