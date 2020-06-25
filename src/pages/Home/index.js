@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import cheerio from 'cheerio';
 
-import { Input, Card, Avatar, Space } from 'antd';
-import { EditOutlined, EllipsisOutlined, SettingOutlined, LinkOutlined } from '@ant-design/icons';
+import { Input, Card, Space } from 'antd';
+import { LinkOutlined } from '@ant-design/icons';
 
 import { Body } from './styles';
 
