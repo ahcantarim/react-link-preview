@@ -46,8 +46,6 @@
         </ul>
     </li>
     <li><a href="#utilizando-a-aplicação">Utilizando a aplicação</a></li>
-    <li><a href="#roteiro-de-melhorias">Roteiro de melhorias</a></li>
-    <li><a href="#contribuições">Contribuições</a></li>
     <li><a href="#licença">Licença</a></li>
     <li><a href="#contato">Contato</a></li>
     <li><a href="#referências">Referências</a></li>
@@ -111,19 +109,6 @@ npm start
 ```
 
 Será inicializado o servidor de desenvolvimento, que pode ser acessado através do *browser* no endereço <http://localhost:3000>.
-
-
-<!-- CONTRIBUTING -->
-## Contribuições
-
-Contribuições são o que fazem a comunidade *open source* um local surpreendente para aprender, inspirar e criar. Qualquer contribuição que você fizer será **de grande valia**.
-
-1. Faça um *fork* desse repositório ni GitHub.
-2. Faça um *clone* do repositório *fork* criado (`git clone https://github.com/ahcantarim/react-link-preview`).
-3. Crie um *branch* para *commitar* sua funcionalidade ou correção (`git checkout -b MyAmazingFeature`).
-4. Faça o *commit* das alterações (`git commit -m 'Add my amazing feature`).
-5. Faça o *push* da sua *branch* para o seu *fork* (`git push origin MyAmazingFeature`).
-6. Vá para as [Pull requests](https://github.com/ahcantarim/react-link-preview/pulls) e abra uma nova requisição com o(s) seu(s) *commits(s)*.
 
 
 <!-- LICENSE -->
